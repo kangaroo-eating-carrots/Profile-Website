@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM Project | myProject</title>
+  <link rel="stylesheet" href="../assets/css/modern-normalize.css">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="./assets/css/mobile.css">
+</head>
+<body>
+  <header id="header" class="bg-black text-white stciky top-0 p-4 pb-6 pl-20 flex flex-row z-10">
+    <img class="w-20 h-20 ml-5"  src="../assets/images/logo.jpeg" alt="Logo">
+    <section id="header-section" class="flex flex-col">
+      <h1 class="text-2xl font-bold ml-5">JM Web Profile</h1>
+      <nav id="nav" class="pt-5 ml-10 italic font-semibold text-xl">
+        <input id="side-menu" class="side-menu" type="checkbox" >
+        <label id="hamb" class="hamb" for="side-menu"><span id="hamb-line" class="hamb-line"></span></label>
+        <ul id="menu" class="flex flex-row gap-8 w-full menu bg-black">
+          <li>
+            <a class="text-gray-400 hover:text-white ease-in-out pb-2" href="../index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white ease-in-out pb-2" href="../about/about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white ease-in-out pb-2" href="../resume/resume.html">
+              Résumé
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-200 hover:text-white ease-in-out pb-2" href="../projects/projects.html">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 hover:text-white ease-in-out pb-2" href="../references/references.html">
+              References
+            </a>
+          </li>
+        </ul>
+      </nav> 
+    </section>
+  </header>
+  <main id="main" class="flex flex-col w-4/5 mx-auto p-10 bg-gray-50">
+    <article>
+      <header>
+        <h2 class="text-3xl font-bold text-gray-500 mb-5">Wordle Game Project</h2>
+      </header>
+      <p class="text-xl">This project is for the assessment of the Web cluster of ICTPRO302.</p>
+      <section class="mt-12">
+        <h4 class="font-mono text-2xl italic mb-3">What is the proeject?</h4>
+        <p><strong class="text-xl">This project</strong> was to develop a text-based <a href="https://en.wikipedia.org/wiki/Wordle" target="_blank"><u><em>wordle game</em></u></a>.</p>
+        <p>An incompleted code was provided as a start point and guide of this project. </p>
+        <p>In addtion, test cases had to be set and run by using doctest.</p>
+      </section>
+      <section class="mt-12">
+        <h4 class="font-mono text-2xl italic mb-3">What is the wordle game?</h4>
+        <p><strong class="text-xl">The worlde game</strong> is a word guessing game by using hints.</p>
+        <p>The answer word is randomly selected from a word list and is not revealed until the end of the game.</p>
+        <p>The player is provided with hints which compares alphabets of the input word and the answer word.</p>
+        <p>Hints showed alphabets used in both the input and answer words as well as whether the alphabets are in the same position.</p>
+        <img src="assets/images/hint.png" alt="wordle_hint" class="border-gray-500 border-2 w-3/4 max-w-2xl flex-auto place-self-center mt-5 md-5 mr-40 project-image">
+      </section>
+      <section class="mt-12">
+        <h4 class="font-mono text-2xl italic mb-3">What is the key logic?</h4>
+        <p><strong class="text-xl">The key logic</strong> for the success of this project is <em>score guess</em>.</p>
+        <p>The score guess is the algorithm to score the player's guess.</p>
+        <p>The player is provided with hints which compares each alphabet of the input word and the answer word.</p>
+        <p>The critical part in this logic is how to handle conflicts: right letters <em>with right position VS with wrong position</em>.</p>
+        <p>For making this logic, a dictionary is created by counting chars in the target word.</p>
+        <p>The dictionary is utilised to score each alphabet of the input word.</p>
+      </section>
+      <section class="mt-12">
+        <h4 class="font-mono text-2xl italic mb-3">Project Result: Text-based Wordle</h4>
+        <img src="assets/images/play.png" alt="wordle_play" class="border-gray-500 border-2 w-3/4 max-w-2xl flex-auto place-self-center mt-5 md-5 mr-40 project-image">
+      </section>
+    </article>
+  </main>
+  <footer id="footer" class="flex flex-col mt-auto gap-15 p-5 bg-black text-gray-400 h-48">
+    <section class="content-center flex flex-row justify-self-center self-center">
+      <h2 class="hidden">Site Links</h2>
+      <a href="https://www.linkedin.com/in/dave-jeonghyun-min-a550a3222/" target="_blank">
+        <img id="Linkedin" alt="Jeonghyun Dave Min LinkedIn Profile" class="grayscale w-14 h-14 m-8 rounded-full hover:grayscale-0 hover:animate-pulse" src="../assets/images/linkedin.png">
+      </a>
+      <a href="https://github.com/kangaroo-eating-carrots/" target="_blank">
+        <img id="GitHub" alt="Jeonghyun Dave Min GitHub Profile" class="grayscale w-14 h-14 m-8 rounded-full hover:grayscale-0 hover:animate-pulse" src="../assets/images/github.png">
+      </a>
+      <a href="https://www.instagram.com/minjeonghyun/" target="_blank">
+        <img id="instagram" alt="Jeonghyun Dave Min instagram" class="grayscale w-14 h-14 m-8 rounded-full hover:grayscale-0 hover:animate-pulse" src="../assets/images/instagram.png">
+      </a>
+      <a href="https://www.facebook.com/jeonghyun.min.5/" target="_blank">
+        <img id="facebook" alt="Jeonghyun Dave Min facebook" class="grayscale w-14 h-14 m-8 rounded-full hover:grayscale-0 hover:animate-pulse" src="../assets/images/facebook.png">
+      </a>
+    </section>
+    <section class="content-end">
+      <h2 class="hidden">Copyright Statement</h2>
+      <p>© Copyright 2025 Jeonghyun Min. All rights reserved.</p>
+    </section>
+  </footer>
+</body>
+</html>
