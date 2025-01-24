@@ -1267,6 +1267,14 @@ video {
     margin-top: 1.5rem;
   }
 
+  .max-sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .max-sm\:hidden {
+    display: none;
+  }
+
   .max-sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
